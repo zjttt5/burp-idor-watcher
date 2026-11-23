@@ -1,0 +1,7 @@
+seq,time,method,template,resource_id,status,length,content_type,flag,identityB_status,identityB_length,verdict
+1,"03:10:20","GET","/api/order/{id}?fields=summary&","1001",200,55289,"application/json","疑似越权候选(多ID均2xx且长度相近)","200","54733","响应近似(差异<2%): 疑似越权,需确认资源归属"
+2,"03:10:20","GET","/api/order/{id}?fields=summary&","1002",200,55287,"application/json","疑似越权候选(多ID均2xx且长度相近)","200","54733","响应近似(差异<2%): 疑似越权,需确认资源归属"
+3,"03:10:21","GET","/api/order/{id}?fields=summary&","1003",200,55288,"application/json","疑似越权候选(多ID均2xx且长度相近)","200","54732","响应近似(差异<2%): 疑似越权,需确认资源归属"
+4,"03:10:21","GET","/api/user/{id}/profile?","1001",200,8626,"application/json","参数未生效(响应恒等)","200","8627","响应近似(差异<2%): 疑似越权,需确认资源归属"
+5,"03:10:22","GET","/api/user/{id}/profile?","1002",200,8626,"application/json","参数未生效(响应恒等)","200","8627","响应近似(差异<2%): 疑似越权,需确认资源归属"
+6,"03:10:23","GET","/api/admin/{id}/audit?","1",200,4096,"application/json","单点观测","403","-","无越权: 身份B被拒绝(403)"

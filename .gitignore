@@ -1,0 +1,30 @@
+# ---- 构建产物 ----
+out/
+dist/
+build/
+*.class
+*.jar
+!scripts/*.jar
+
+# ---- Montoya API（从你自己的 Burp 里抽取，不入库）----
+lib/
+lib/*.jar
+
+# ---- IDE ----
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+.settings/
+.classpath
+.project
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 运行产物 ----
+*.csv
+!samples/*.csv
+*.log
